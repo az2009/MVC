@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config>
+   <frontend>
+   		<router>
+   			<name>index</name>
+   		</router>
+   		<menu>
+   			<item>
+  				<name>jefferson_teste_principal</name>
+	   			<title>Teste</title>
+	   			<controller>index</controller>
+	   			<child></child>
+	   			<disabled></disabled>
+	   		</item>
+   		</menu>
+   </frontend>
+</config>

@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<config>
+   <frontend>
+
+   		<router>
+   			<name>navigation</name>
+   		</router>
+
+   		<menu>
+   			<item>
+   				<name>core_navigation_principal</name>
+   				<title>Navigation Principal</title>
+	   			<controller>index</controller>
+	   			<child></child>
+	   		</item>
+
+	   		<item>
+	   			<name>core_navigation_sub_1</name>
+   				<title>Navigation Sub 1</title>
+	   			<controller>index</controller>
+	   			<child>core_navigation_principal</child>
+	   			<disabled></disabled>
+	   		</item>
+
+	   		<item>
+	   			<name>core_navigation_sub_2</name>
+   				<title>Navigation Sub 2</title>
+	   			<controller>index</controller>
+	   			<child>core_navigation_sub_1</child>
+	   			<disabled></disabled>
+	   		</item>
+
+	   		<item>
+	   			<name>core_navigation_sub_3</name>
+   				<title>Navigation Sub 3</title>
+	   			<controller>index</controller>
+	   			<child>core_navigation_sub_2</child>
+	   			<disabled></disabled>
+	   		</item>
+
+	   		<item>
+	   			<name>core_navigation_sub_4</name>
+   				<title>Navigation Sub 4</title>
+	   			<controller>index</controller>
+	   			<child>core_navigation_sub_3</child>
+	   			<disabled></disabled>
+	   		</item>
+
+	   		<item>
+	   			<name>jefferson_sub_1</name>
+   				<title>Teste Sub 1</title>
+	   			<controller>index</controller>
+	   			<child>jefferson_teste_principal</child>
+	   			<disabled></disabled>
+	   		</item>
+
+
+   		</menu>
+
+   </frontend>
+</config>

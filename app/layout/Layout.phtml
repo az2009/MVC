@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <?php echo $this->title ?>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://sias.uniusdesenvolvimento.com.br/wp-content/themes/unius/css/menu-responsivo.css">
+        <?php echo $this->css  ?>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="http://sias.uniusdesenvolvimento.com.br/wp-content/themes/unius/js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="http://sias.uniusdesenvolvimento.com.br/wp-content/themes/unius/js/jquery.slicknav.js"></script>
+        <?php echo $this->js   ?>
+        <?php echo $this->html ?>
+    </head>
+    <body>
+
+          <header id="header" class="container-fluid">
+             <div class="row">
+                <div class="col-lg-12">
+                    <?php echo $this->header ?>
+                </div>
+             </div>
+          </header>
+
+              <nav id="nav">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <?php echo $this->navigation();?>
+                            </div>
+                        </div>
+                    </div>
+              </nav>
+
+          <main class="content" class="container-fluid">
+             <div class="row">
+                <div class="col-lg-12">
+                    <?php $this->getContent() ?>
+                </div>
+             </div>
+          </main>
+
+          <footer class="footer" class="container-fluid">
+             <div class="row">
+                <div class="col-lg-12">
+                    <?php echo $this->footer ?>
+               </div>
+             </div>
+          </footer>
+
+    </body>
+</html>

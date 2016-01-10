@@ -1,0 +1,32 @@
+ {
+        "name": "Autoloading/Composer",
+
+        "description": "Framework MVC",
+
+	    "require": {
+			"php": ">=5.3.3"
+		},
+
+        "authors": [
+            {
+                "name": "Jefferson Porto",
+                "homepage": "https://github.com/az2009/"
+            }
+        ],
+
+        "autoload":{
+        	"psr-0": {
+        		"Core": "library/",
+        		"Container": "app/Container.php",
+        		"jefferson": "app/modules/",
+        		"core": "app/modules/"
+        	},
+
+        	"files": ["app/Container.php"]
+
+
+        }
+
+
+
+    }

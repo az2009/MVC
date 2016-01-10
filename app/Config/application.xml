@@ -1,0 +1,29 @@
+<config>
+
+	<connections>
+		<host>localhost</host>
+		<user>user</user>
+		<pass>pass</pass>
+		<dbname>db</dbname>
+		<charset>SET NAMES utf8</charset>
+		<type>mysql</type>
+	</connections>
+
+	<path>
+		<url>http://jeffersonporto.com/mvc</url>
+		<path_register>register</path_register>
+		<path_controller>controller</path_controller>
+		<path_modules>app/modules</path_modules>
+		<path_config>/etc/config.xml</path_config>
+		<name_action>Action</name_action>
+		<name_controller>Controller</name_controller>
+		<ext_file>.php</ext_file>
+		<controller_not_found_msg>Controller não encontrado</controller_not_found_msg>
+		<router_not_found_msg>Rota não encontrada</router_not_found_msg>
+		<path_view>view</path_view>
+		<path_layout>app/layout/Layout.phtml</path_layout>
+		<ext_file_view>.phtml</ext_file_view>
+		<router_default>index</router_default>
+	</path>
+
+</config>
