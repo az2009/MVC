@@ -1,7 +1,7 @@
 <?php
     namespace jefferson\teste\controller;
-    use \Core\Controller\ActionAbstract;
-    use \Container;
+    use Core\Controller\ActionAbstract;
+    use Container;
     class IndexController extends ActionAbstract {
         public function indexAction(){
             $this->createBlock('teste')
@@ -12,7 +12,11 @@
                  ->setHeader('')
                  ->setFooter('')
                  ->setTemplate('template');
+
+
             echo Container::getHelper('Data')->testeData();
+
+
         }
 
     }

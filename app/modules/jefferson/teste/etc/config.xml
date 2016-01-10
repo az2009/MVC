@@ -1,9 +1,13 @@
 <?xml version="1.0"?>
 <config>
    <frontend>
+
+   		<!-- Rota do módulo -->
    		<router>
    			<name>index</name>
    		</router>
+
+   		<!-- Menu do módulo -->
    		<menu>
    			<item>
   				<name>jefferson_teste_principal</name>
