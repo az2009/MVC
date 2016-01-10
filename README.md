@@ -68,7 +68,21 @@ Configurações
 
 </config>
 
+Declarando um módulo
 
+  - Crie uma árquivo xml com a seguinte estrutura: namespace_nome-do-modulo.xml
+    ex: register/exemplo_ex.xml
+
+  - Cria a estrutura do seu módulo em:
+     app/modules/ex
+      	app/modules/exemplo/ex/block/
+      	app/modules/exemplo/ex/controller/
+      	app/modules/exemplo/ex/etc/
+      	app/modules/exemplo/ex/helper/
+      	app/modules/exemplo/ex/model/
+      	app/modules/exemplo/ex/view/
+
+    Dentro da pasta modules existe dois módulos de exemplo.
 
 
 
