@@ -84,6 +84,76 @@ Declarando um módulo
 
     Dentro da pasta modules existe dois módulos de exemplo.
 
+ Estrutura da URL
+
+   http://dominio.com.br/rota/controller/action/id/5/nome/teste
+    - rota: rota declarada no arquivo de config do módulo
+    - controller do módulo
+    - action do módulo
+      - Parametros
+        id = 5
+        nome = teste
+
+         chamada:
+           $this->getParam('id') : retorna int 5
+           $this->getParams() : retorna Array
+
+
+           Mais métodos do core, estão nas pastas library/Core/
+           													Block - BlockAbstract
+           													Controller - ActionAbstract
+           													Helper - DataAbstract
+           													Model - ModelAbstract
+
+			Exemplo:
+					 declarando um controller
+
+			class IndexController extends ActionAbstract {
+				public function indexAction(){}
+			}
+
+
+					 Chamando model/helper/view
+					 Container::getModel('exemplo');
+					 Container::getHelper('exemplo');
+
+					 Chamando a view
+					    $this->createBlock('teste') - attr nome block
+			                 ->setTitle('teste') - Título da página
+			                 ->setJs('script.js') - Inserindo JS
+			                 ->setCss('script.css') - Inserindo CSS
+			                 ->setHead('<meta name="" content="">')  - HTML extra
+			                 ->setHeader('') - Inserindo um valor extra no header
+			                 ->setFooter('') - Inserindo um valor extra no footer
+			                 ->setTemplate('template'); - Chamando a view
+
+
+		 Na estrutura toda a regra de negócio vai dentro dos blocos de layout e não no controller
+		 as view tem acesso direto ao seu respectivo block através do $this.
+
+		 Enviando um valor para a view:
+
+		No block:
+
+			  $valor = array('ex' => 1);
+
+			  $this->createBlock('teste')
+			  	   ->setData($valor)
+			       ->setTemplate('template');
+
+
+		Na view:
+			$array = $this->getData();
+			var_dump($array) = array('ex' => 1);
+
+		Model
+
+		 A Model extende direto do PDO
+
+
+
+
+
 
 
 

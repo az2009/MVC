@@ -11,6 +11,7 @@
                  ->setHead('<meta name="" content="">')
                  ->setHeader('')
                  ->setFooter('')
+                 ->setData('teste')
                  ->setTemplate('template');
 
 
