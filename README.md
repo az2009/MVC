@@ -21,7 +21,7 @@ Configurações
 
 	<path>
 	 - Url da aplicação
-		<url>http://jeffersonporto.com/mvc</url>
+		<url>http://example.com/mvc</url>
 
 	 - Nome da pasta onde é registrado os módulos
 		<path_register>register</path_register>
